@@ -1,0 +1,155 @@
+/*---------------------Estilos generales---------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	background: #9EADC8;
+	color: #fff;
+}
+
+.container{
+	width: 85%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+/*---------------------Menu---------------------*/
+header{
+	background: #5B507A;
+	position: fixed;
+	height: 80px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+.logo p{
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 80px;
+	float: left;
+}
+
+
+
+.logo p a{
+	text-decoration: none;
+	color: #B9E28C;
+}
+
+.logo p a span{
+	color: #000;
+}
+
+.menu{
+	float: right;
+	list-style: none;
+}
+
+.menu li{
+	display: inline-block;
+	line-height: 80px;
+}
+
+.menu li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 3px;
+}
+
+.menu li a:hover{
+	background: #5B618A;
+}
+
+/*---------------------Menu bar---------------------*/
+
+.menu-bar{
+	position: absolute;
+	top: 0px;
+	right: 8%;
+	font-size: 30px;
+	display: none;
+	line-height: 80px;
+}
+
+.menu-bar span{
+	/*border: 1px solid red;*/
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.menu-bar span:hover{
+	background: #5B618A;
+}
+
+/*---------------------contenido---------------------*/
+.main{
+	margin-top: 120px;
+}
+
+.main h2{
+	text-align: left;
+	margin-top: 30px;
+	color: #fff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #fff;
+}
+
+.main p{
+	padding-top: 15px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+/*---------------------footer---------------------*/
+
+footer{
+	height: 50px;
+	background: #5B507A;
+	color: #fff;
+}
+
+footer p{
+	text-align: center;
+	line-height: 50px;
+}
+
+
+/*---------------------Estilos responsivos---------------------*/
+@media screen and (max-width: 767px){
+
+	.menu-bar{
+		display: block;
+	}
+
+	.menu{
+		float: none;
+		position: fixed;
+		top: 80px;
+		left: 0px;
+		width: 100%;
+		background: #5B507A;
+		display: none;
+	}
+
+	.menu li{
+		display: block;
+		overflow: hidden;
+		line-height: 55px;
+	}
+	
+	.menu li a{
+		padding: 15px 8%;
+		padding-right: 100%;
+	}
+
+}
